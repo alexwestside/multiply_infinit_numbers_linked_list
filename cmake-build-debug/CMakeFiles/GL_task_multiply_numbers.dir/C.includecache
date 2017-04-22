@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/main.c.c
+fcntl.h
+-
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+
