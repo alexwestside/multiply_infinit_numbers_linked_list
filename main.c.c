@@ -42,14 +42,12 @@ char *revstr(char *str)
 	return (s);
 }
 
-
 int atoi_char(char c)
 {
 	int num = 0;
 	num = c - '0';
 	return (num);
 }
-
 
 void mult_infinit(t_list **res, char *s1, char *s2)
 {
@@ -109,7 +107,7 @@ void read_file(char **str, char *path)
 	FILE *p = NULL;
 	long fSize = 0;
 
-	p = fopen(path, "rb");
+	p = fopen(path, "r");
 	if (p)
 	{
 		fseek(p, 0, SEEK_END);
@@ -118,6 +116,8 @@ void read_file(char **str, char *path)
 		if (!(*str = (char *) malloc(sizeof(char) * fSize)))
 			ft_error(2);
 		fread(*str, 1, (size_t) fSize, p);
+		if ((*str)[strlen(*str) - 1] == '\n')
+			(*str)[strlen(*str) - 1] = '\0';
 		fclose(p);
 	}
 	else
@@ -150,8 +150,8 @@ int main()
 	char *s2 = NULL;
 	t_list *res = NULL;
 
-	read_file(&s1, "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/test3");
-	read_file(&s2, "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/test4");
+	read_file(&s1, "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/test1.txt");
+	read_file(&s2, "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/test2.txt");
 	s1 = revstr(s1);
 	s2 = revstr(s2);
 	mult_infinit(&res, s1, s2);

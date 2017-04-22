@@ -11,7 +11,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71225fd4-935e-4259-a1ea-a1aa099df726" name="Default" comment="" />
+    <list default="true" id="71225fd4-935e-4259-a1ea-a1aa099df726" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/GL_task_multiply_numbers" afterPath="$PROJECT_DIR$/cmake-build-debug/GL_task_multiply_numbers" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c.c" afterPath="$PROJECT_DIR$/main.c.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result" afterPath="$PROJECT_DIR$/result" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +47,8 @@
       <file leaf-file-name="main.c.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-609">
-              <caret line="62" column="20" lean-forward="false" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+            <state relative-caret-position="2295">
+              <caret line="153" column="101" lean-forward="false" selection-start-line="153" selection-start-column="101" selection-end-line="153" selection-end-column="101" />
               <folding>
                 <element signature="e#1#19#0" expanded="true" />
               </folding>
@@ -51,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/result">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="1000" lean-forward="false" selection-start-line="0" selection-start-column="1000" selection-end-line="0" selection-end-column="1000" />
+              <caret line="0" column="1999" lean-forward="false" selection-start-line="0" selection-start-column="1999" selection-end-line="0" selection-end-column="1999" />
               <folding />
             </state>
           </provider>
@@ -60,8 +69,8 @@
       <file leaf-file-name="test1.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="1000" lean-forward="false" selection-start-line="0" selection-start-column="1000" selection-end-line="0" selection-end-column="1000" />
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/test2.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="1000" lean-forward="false" selection-start-line="0" selection-start-column="1000" selection-end-line="0" selection-end-column="1000" />
+              <caret line="0" column="1000" lean-forward="true" selection-start-line="0" selection-start-column="1000" selection-end-line="0" selection-end-column="1000" />
               <folding />
             </state>
           </provider>
@@ -81,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/test3">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="1007" lean-forward="false" selection-start-line="0" selection-start-column="1007" selection-end-line="0" selection-end-column="1007" />
+              <caret line="0" column="721" lean-forward="true" selection-start-line="0" selection-start-column="721" selection-end-line="0" selection-end-column="721" />
               <folding />
             </state>
           </provider>
@@ -91,13 +100,36 @@
         <entry file="file://$PROJECT_DIR$/test4">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="1015" lean-forward="true" selection-start-line="0" selection-start-column="1015" selection-end-line="0" selection-end-column="1015" />
+              <caret line="0" column="1015" lean-forward="false" selection-start-line="0" selection-start-column="1015" selection-end-line="0" selection-end-column="1015" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test6" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test6">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test5" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test5">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -106,6 +138,8 @@
         <option value="$PROJECT_DIR$/result" />
         <option value="$PROJECT_DIR$/test3" />
         <option value="$PROJECT_DIR$/test4" />
+        <option value="$PROJECT_DIR$/test6" />
+        <option value="$PROJECT_DIR$/test5" />
         <option value="$PROJECT_DIR$/main.c.c" />
       </list>
     </option>
@@ -120,6 +154,7 @@
     <option name="width" value="2560" />
     <option name="height" value="1440" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -351,12 +386,12 @@
       <workItem from="1492776853827" duration="18391000" />
       <workItem from="1492849101496" duration="2656000" />
       <workItem from="1492867467291" duration="434000" />
-      <workItem from="1492871030903" duration="1803000" />
+      <workItem from="1492871030903" duration="3578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23284000" />
+    <option name="totallyTimeSpent" value="25059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -368,10 +403,10 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5013785" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29635036" sideWeight="0.4986215" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.4986215" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23138686" sideWeight="0.4986215" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.4986215" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -393,11 +428,26 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.c.c</url>
-          <line>152</line>
-          <option name="timeStamp" value="65" />
+          <line>65</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c.c</url>
+          <line>154</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c.c</url>
+          <line>41</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c.c</url>
+          <line>117</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="66" />
+      <option name="time" value="75" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -477,10 +527,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test1.txt">
+    <entry file="file://$PROJECT_DIR$/test4">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="1000" lean-forward="false" selection-start-line="0" selection-start-column="1000" selection-end-line="0" selection-end-column="1000" />
+          <caret line="0" column="1015" lean-forward="false" selection-start-line="0" selection-start-column="1015" selection-end-line="0" selection-end-column="1015" />
           <folding />
         </state>
       </provider>
@@ -488,15 +538,15 @@
     <entry file="file://$PROJECT_DIR$/test2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="1000" lean-forward="false" selection-start-line="0" selection-start-column="1000" selection-end-line="0" selection-end-column="1000" />
+          <caret line="0" column="1000" lean-forward="true" selection-start-line="0" selection-start-column="1000" selection-end-line="0" selection-end-column="1000" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result">
+    <entry file="file://$PROJECT_DIR$/test1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1000" lean-forward="false" selection-start-line="0" selection-start-column="1000" selection-end-line="0" selection-end-column="1000" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -504,23 +554,39 @@
     <entry file="file://$PROJECT_DIR$/test3">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="1007" lean-forward="false" selection-start-line="0" selection-start-column="1007" selection-end-line="0" selection-end-column="1007" />
+          <caret line="0" column="721" lean-forward="true" selection-start-line="0" selection-start-column="721" selection-end-line="0" selection-end-column="721" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test4">
+    <entry file="file://$PROJECT_DIR$/test6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="1015" lean-forward="true" selection-start-line="0" selection-start-column="1015" selection-end-line="0" selection-end-column="1015" />
+          <caret line="0" column="1999" lean-forward="false" selection-start-line="0" selection-start-column="1999" selection-end-line="0" selection-end-column="1999" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-609">
-          <caret line="62" column="20" lean-forward="false" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+        <state relative-caret-position="2295">
+          <caret line="153" column="101" lean-forward="false" selection-start-line="153" selection-start-column="101" selection-end-line="153" selection-end-column="101" />
           <folding>
             <element signature="e#1#19#0" expanded="true" />
           </folding>
