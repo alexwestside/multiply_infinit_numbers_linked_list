@@ -57,38 +57,38 @@ include CMakeFiles/GL_task_multiply_numbers.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/GL_task_multiply_numbers.dir/flags.make
 
-CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o: CMakeFiles/GL_task_multiply_numbers.dir/flags.make
-CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o: ../main.c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o   -c "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/main.c.c"
+CMakeFiles/GL_task_multiply_numbers.dir/main.c.o: CMakeFiles/GL_task_multiply_numbers.dir/flags.make
+CMakeFiles/GL_task_multiply_numbers.dir/main.c.o: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/GL_task_multiply_numbers.dir/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/GL_task_multiply_numbers.dir/main.c.o   -c "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/main.c"
 
-CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/main.c.c" > CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.i
+CMakeFiles/GL_task_multiply_numbers.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GL_task_multiply_numbers.dir/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/main.c" > CMakeFiles/GL_task_multiply_numbers.dir/main.c.i
 
-CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/main.c.c" -o CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.s
+CMakeFiles/GL_task_multiply_numbers.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GL_task_multiply_numbers.dir/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/main.c" -o CMakeFiles/GL_task_multiply_numbers.dir/main.c.s
 
-CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o.requires:
+CMakeFiles/GL_task_multiply_numbers.dir/main.c.o.requires:
 
-.PHONY : CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o.requires
+.PHONY : CMakeFiles/GL_task_multiply_numbers.dir/main.c.o.requires
 
-CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o.provides: CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o.requires
-	$(MAKE) -f CMakeFiles/GL_task_multiply_numbers.dir/build.make CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o.provides.build
-.PHONY : CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o.provides
+CMakeFiles/GL_task_multiply_numbers.dir/main.c.o.provides: CMakeFiles/GL_task_multiply_numbers.dir/main.c.o.requires
+	$(MAKE) -f CMakeFiles/GL_task_multiply_numbers.dir/build.make CMakeFiles/GL_task_multiply_numbers.dir/main.c.o.provides.build
+.PHONY : CMakeFiles/GL_task_multiply_numbers.dir/main.c.o.provides
 
-CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o.provides.build: CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o
+CMakeFiles/GL_task_multiply_numbers.dir/main.c.o.provides.build: CMakeFiles/GL_task_multiply_numbers.dir/main.c.o
 
 
 # Object files for target GL_task_multiply_numbers
 GL_task_multiply_numbers_OBJECTS = \
-"CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o"
+"CMakeFiles/GL_task_multiply_numbers.dir/main.c.o"
 
 # External object files for target GL_task_multiply_numbers
 GL_task_multiply_numbers_EXTERNAL_OBJECTS =
 
-GL_task_multiply_numbers: CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o
+GL_task_multiply_numbers: CMakeFiles/GL_task_multiply_numbers.dir/main.c.o
 GL_task_multiply_numbers: CMakeFiles/GL_task_multiply_numbers.dir/build.make
 GL_task_multiply_numbers: CMakeFiles/GL_task_multiply_numbers.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable GL_task_multiply_numbers"
@@ -99,7 +99,7 @@ CMakeFiles/GL_task_multiply_numbers.dir/build: GL_task_multiply_numbers
 
 .PHONY : CMakeFiles/GL_task_multiply_numbers.dir/build
 
-CMakeFiles/GL_task_multiply_numbers.dir/requires: CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o.requires
+CMakeFiles/GL_task_multiply_numbers.dir/requires: CMakeFiles/GL_task_multiply_numbers.dir/main.c.o.requires
 
 .PHONY : CMakeFiles/GL_task_multiply_numbers.dir/requires
 

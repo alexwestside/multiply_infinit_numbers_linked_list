@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/main.c.c" "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/cmake-build-debug/CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o"
+  "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/main.c" "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/cmake-build-debug/CMakeFiles/GL_task_multiply_numbers.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

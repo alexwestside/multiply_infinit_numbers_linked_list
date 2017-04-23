@@ -8,17 +8,17 @@ void ft_error(int id)
 {
 	if (id == 1)
 	{
-		std::cout << "Please give me 2 files!";
+		printf("Please give me 2 files!");
 		exit(0);
 	}
 	if (id == 2)
 	{
-		std::cout << "Can't open FILE!";
+		printf("Can't open FILE!");
 		exit(0);
 	}
 	if (id == 3)
 	{
-		std::cout << "Can't allocate MEMORY!";
+		printf("Can't allocate MEMORY!");
 		exit(0);
 	}
 }
@@ -81,7 +81,6 @@ void mult_infinit(t_list **res, char *s1, char *s2)
 				{
 					list->next = (t_list *)malloc(sizeof(t_list));
 					list->next->next = NULL;
-//					list->prev = list;
 					list->next->prev = list;
 					list->next->num = (list->num + num) / 10;
 					list->num = (list->num + num) % 10;
@@ -118,60 +117,6 @@ void mult_infinit(t_list **res, char *s1, char *s2)
 		move = move->next;
 		list = move;
 	}
-
-
-
-//	int num;
-//	t_list *head;
-//	char *p1;
-//	char *p2;
-//
-//	p2 = s2;
-//	if (!((*res) = (t_list *) malloc(sizeof(t_list))))
-//		ft_error(2);
-//	(*res)->num = 0;
-//	(*res)->prev = NULL;
-//	(*res)->next = NULL;
-//	head = *res;
-//	int num2;
-//	while (*p2)
-//	{
-//		p1 = s1;
-//		while(*p1)
-//		{
-//			num = atoi_char(*p1) * atoi_char(*p2);
-//			if (((*res)->num + num) >= 10)
-//			{
-//				(*res)->num = ((*res)->num + num) % 10;
-//				if (!(*res)->next)
-//				{
-//					if (!((*res)->next = (t_list *) malloc(sizeof(t_list))))
-//						ft_error(2);
-//					(*res)->next->num = 0;
-//					(*res)->next->prev = (*res);
-//				}
-//				(*res) = (*res)->next;
-//				(*res)->next = NULL;
-//				(*res)->num = (*res)->num + num / 10;
-//			}
-//			else
-//			{
-//				(*res)->num = (*res)->num + num;
-//				if (!((*res)->next = (t_list *) malloc(sizeof(t_list))))
-//					ft_error(2);
-//				(*res)->next->prev = (*res);
-//				(*res) = (*res)->next;
-//				(*res)->num = 0;
-//				(*res)->next = NULL;
-//			}
-//			p1++;
-//		}
-//		head = head->next;
-//		(*res) = head;
-//		p2++;
-//	}
-//	(*res) = (*res)->prev;
-
 }
 
 void read_file(char **str, char *path)
@@ -186,7 +131,7 @@ void read_file(char **str, char *path)
 		fSize = ftell(p);
 		rewind(p);
 		if (!(*str = (char *) malloc(sizeof(char) * fSize)))
-			ft_error(2);
+			ft_error(3);
 		fread(*str, 1, (size_t) fSize, p);
 		if ((*str)[strlen(*str) - 1] == '\n')
 			(*str)[strlen(*str) - 1] = '\0';
@@ -198,6 +143,9 @@ void read_file(char **str, char *path)
 
 void print_answer(t_list *res)
 {
+	FILE *p = NULL;
+	p = fopen("/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/result.txt", "w");
+
 	t_list *list;
 
 	list = res;
@@ -205,30 +153,15 @@ void print_answer(t_list *res)
 		list = list->next;
 	while(list)
 	{
-		printf("%d", list->num);
-		list = list->prev;
+		if(!list->next && !list->num)
+			list = list->prev;
+		else
+		{
+			fprintf(p, "%d", list->num);
+//			printf("%d", list->num);
+			list = list->prev;
+		}
 	}
-
-
-
-//	FILE *p = NULL;
-//	p = fopen("/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/result.txt", "w");
-
-//	while (res->next)
-//		res = res->next;
-//	while (res->prev)
-//	{
-//		if (!res->next && !res->num)
-//			res = res->prev;
-//		else
-//		{
-//			fprintf(p, "%d", res->num);
-//			printf("%d", res->num);
-//			res = res->prev;
-//		}
-//	}
-//	fprintf(p, "%d", res->num);
-//	printf("%d", res->num);
 }
 
 int main(int ac, char **av)
@@ -247,7 +180,7 @@ int main(int ac, char **av)
 		print_answer(res);
 	}
 	else
-		ft_error(3);
+		ft_error(1);
 }
 
 

@@ -123,32 +123,32 @@ GL_task_multiply_numbers/fast:
 	$(MAKE) -f CMakeFiles/GL_task_multiply_numbers.dir/build.make CMakeFiles/GL_task_multiply_numbers.dir/build
 .PHONY : GL_task_multiply_numbers/fast
 
-main.c.o: main.c.c.o
+main.o: main.c.o
 
-.PHONY : main.c.o
+.PHONY : main.o
 
 # target to build an object file
-main.c.c.o:
-	$(MAKE) -f CMakeFiles/GL_task_multiply_numbers.dir/build.make CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o
-.PHONY : main.c.c.o
+main.c.o:
+	$(MAKE) -f CMakeFiles/GL_task_multiply_numbers.dir/build.make CMakeFiles/GL_task_multiply_numbers.dir/main.c.o
+.PHONY : main.c.o
 
-main.c.i: main.c.c.i
+main.i: main.c.i
 
-.PHONY : main.c.i
+.PHONY : main.i
 
 # target to preprocess a source file
-main.c.c.i:
-	$(MAKE) -f CMakeFiles/GL_task_multiply_numbers.dir/build.make CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.i
-.PHONY : main.c.c.i
+main.c.i:
+	$(MAKE) -f CMakeFiles/GL_task_multiply_numbers.dir/build.make CMakeFiles/GL_task_multiply_numbers.dir/main.c.i
+.PHONY : main.c.i
 
-main.c.s: main.c.c.s
+main.s: main.c.s
 
-.PHONY : main.c.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-main.c.c.s:
-	$(MAKE) -f CMakeFiles/GL_task_multiply_numbers.dir/build.make CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.s
-.PHONY : main.c.c.s
+main.c.s:
+	$(MAKE) -f CMakeFiles/GL_task_multiply_numbers.dir/build.make CMakeFiles/GL_task_multiply_numbers.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GL_task_multiply_numbers"
-	@echo "... main.c.o"
-	@echo "... main.c.i"
-	@echo "... main.c.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GL_task_multiply_numbers.dir/main.c.c.o"
+  "CMakeFiles/GL_task_multiply_numbers.dir/main.c.o"
   "GL_task_multiply_numbers.pdb"
   "GL_task_multiply_numbers"
 )

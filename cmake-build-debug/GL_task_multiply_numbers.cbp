@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/main.c.c">
+		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/main.c">
 			<Option target="GL_task_multiply_numbers"/>
 		</Unit>
 		<Unit filename="/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/CMakeLists.txt">
