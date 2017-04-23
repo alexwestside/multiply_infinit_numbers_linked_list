@@ -8,23 +8,27 @@ void ft_error(int id)
 {
 	if (id == 1)
 	{
-		printf("Can't open FILE!");
+		std::cout << "Please give me 2 files!";
 		exit(0);
 	}
-	else if (id == 2)
+	if (id == 2)
 	{
-		printf("Can't allocate MEMORY!");
+		std::cout << "Can't open FILE!";
 		exit(0);
 	}
-
+	if (id == 3)
+	{
+		std::cout << "Can't allocate MEMORY!";
+		exit(0);
+	}
 }
 
-typedef struct		s_list
+typedef struct s_list
 {
-	int				num;
-	struct s_list	*next;
-	struct s_list	*prev;
-}					t_list;
+	int num;
+	struct s_list *next;
+	struct s_list *prev;
+} t_list;
 
 char *revstr(char *str)
 {
@@ -51,55 +55,123 @@ int atoi_char(char c)
 
 void mult_infinit(t_list **res, char *s1, char *s2)
 {
+	char *str1;
+	char *str2;
+	t_list *list;
+	t_list *move;
 	int num;
-	t_list *head;
-	char *p1;
-	char *p2;
 
-	p2 = s2;
-	if (!((*res) = (t_list *)malloc(sizeof(t_list))))
-		ft_error(2);
-	(*res)->num = 0;
+	str2 = s2;
+	*res = (t_list *)malloc(sizeof(t_list));
 	(*res)->prev = NULL;
 	(*res)->next = NULL;
-	head = *res;
-	while (*p2)
+	(*res)->num = 0;
+	list = *res;
+	move = *res;
+	num = 0;
+	while (*str2)
 	{
-		p1 = s1;
-		while(*p1)
+		str1 = s1;
+		while (*str1)
 		{
-			num = atoi_char(*p1) * atoi_char(*p2);
-			if (((*res)->num + num) >= 10)
+			num = atoi_char(*str1) * atoi_char(*str2);
+			if ((list->num + num) >= 10)
 			{
-				(*res)->num = ((*res)->num + num) % 10;
-				if (!(*res)->next)
+				if (!list->next)
 				{
-					if (!((*res)->next = (t_list *) malloc(sizeof(t_list))))
-						ft_error(2);
-					(*res)->next->num = 0;
-					(*res)->next->prev = (*res);
+					list->next = (t_list *)malloc(sizeof(t_list));
+					list->next->next = NULL;
+//					list->prev = list;
+					list->next->prev = list;
+					list->next->num = (list->num + num) / 10;
+					list->num = (list->num + num) % 10;
 				}
-				(*res) = (*res)->next;
-				(*res)->next = NULL;
-				(*res)->num = (*res)->num + num / 10;
+				else
+				{
+					if ((list->next->num + ((list->num + num) / 10)) >= 10)
+					{
+						list->next->next = (t_list *)malloc(sizeof(t_list));
+						list->next->next->next = NULL;
+						list->next->next->prev = list->next;
+						list->next->next->num = (list->next->num + ((list->num + num) / 10)) / 10;
+						list->next->num = (list->next->num + ((list->num + num) / 10)) % 10;
+						list->num = (list->num + num) % 10;
+					}
+					else
+					{
+						list->next->num = list->next->num + (list->num + num) / 10;
+						list->num = (list->num + num) % 10;
+					}
+				}
 			}
 			else
 			{
-				(*res)->num = (*res)->num + num;
-				if (!((*res)->next = (t_list *) malloc(sizeof(t_list))))
-					ft_error(2);
-				(*res)->next->prev = (*res);
-				(*res) = (*res)->next;
-				(*res)->num = 0;
-				(*res)->next = NULL;
+				list->num = list->num + num;
+				list->next = (t_list *)malloc(sizeof(t_list));
+				list->next->next = NULL;
+				list->next->prev = list;
 			}
-			p1++;
+			list = list->next;
+			str1++;
 		}
-		head = head->next;
-		(*res) = head;
-		p2++;
+		str2++;
+		move = move->next;
+		list = move;
 	}
-	(*res) = (*res)->prev;
+
+
+
+//	int num;
+//	t_list *head;
+//	char *p1;
+//	char *p2;
+//
+//	p2 = s2;
+//	if (!((*res) = (t_list *) malloc(sizeof(t_list))))
+//		ft_error(2);
+//	(*res)->num = 0;
+//	(*res)->prev = NULL;
+//	(*res)->next = NULL;
+//	head = *res;
+//	int num2;
+//	while (*p2)
+//	{
+//		p1 = s1;
+//		while(*p1)
+//		{
+//			num = atoi_char(*p1) * atoi_char(*p2);
+//			if (((*res)->num + num) >= 10)
+//			{
+//				(*res)->num = ((*res)->num + num) % 10;
+//				if (!(*res)->next)
+//				{
+//					if (!((*res)->next = (t_list *) malloc(sizeof(t_list))))
+//						ft_error(2);
+//					(*res)->next->num = 0;
+//					(*res)->next->prev = (*res);
+//				}
+//				(*res) = (*res)->next;
+//				(*res)->next = NULL;
+//				(*res)->num = (*res)->num + num / 10;
+//			}
+//			else
+//			{
+//				(*res)->num = (*res)->num + num;
+//				if (!((*res)->next = (t_list *) malloc(sizeof(t_list))))
+//					ft_error(2);
+//				(*res)->next->prev = (*res);
+//				(*res) = (*res)->next;
+//				(*res)->num = 0;
+//				(*res)->next = NULL;
+//			}
+//			p1++;
+//		}
+//		head = head->next;
+//		(*res) = head;
+//		p2++;
+//	}
+//	(*res) = (*res)->prev;
+
 }
 
 void read_file(char **str, char *path)
@@ -126,34 +198,62 @@ void read_file(char **str, char *path)
 
 void print_answer(t_list *res)
 {
-	FILE *p = NULL;
-	p = fopen("/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/result", "w");
+	t_list *list;
 
-	while (res->next)
-		res = res->next;
-	while (res->prev)
+	list = res;
+	while (list->next)
+		list = list->next;
+	while(list)
 	{
-		if (!res->next && !res->num)
-			res = res->prev;
-		else
-		{
-			fprintf(p, "%d", res->num);
-			res = res->prev;
-		}
+		printf("%d", list->num);
+		list = list->prev;
 	}
-	fprintf(p, "%d", res->num);
+
+
+
+//	FILE *p = NULL;
+//	p = fopen("/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/result.txt", "w");
+
+//	while (res->next)
+//		res = res->next;
+//	while (res->prev)
+//	{
+//		if (!res->next && !res->num)
+//			res = res->prev;
+//		else
+//		{
+//			fprintf(p, "%d", res->num);
+//			printf("%d", res->num);
+//			res = res->prev;
+//		}
+//	}
+//	fprintf(p, "%d", res->num);
+//	printf("%d", res->num);
 }
 
-int main()
+int main(int ac, char **av)
 {
 	char *s1 = NULL;
 	char *s2 = NULL;
 	t_list *res = NULL;
 
-	read_file(&s1, "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/test1.txt");
-	read_file(&s2, "/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/test2.txt");
-	s1 = revstr(s1);
-	s2 = revstr(s2);
-	mult_infinit(&res, s1, s2);
-	print_answer(res);
+	if (ac == 3)
+	{
+		read_file(&s1, av[1]);
+		read_file(&s2, av[2]);
+		s1 = revstr(s1);
+		s2 = revstr(s2);
+		mult_infinit(&res, s1, s2);
+		print_answer(res);
+	}
+	else
+		ft_error(3);
 }
+
+
+/*
+
+
+
+
+*/
