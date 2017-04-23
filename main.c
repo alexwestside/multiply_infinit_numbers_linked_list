@@ -4,6 +4,29 @@
 #include <stdlib.h>
 #include <memory.h>
 
+/**********************************************************************************************************************
+* Hello!
+* This is version #2 of solution program which solves task by implementation linked list.
+* Program takes 2 parameters which can be 2 txt files with a "infiniti" numbers.
+* That numbers will be multiply and write a result to the created file.
+*/
+
+
+/**
+ * Define a structure which will be fill a int representation number sequence of the result
+ */
+
+typedef struct s_list
+{
+	int num;
+	struct s_list *next;
+	struct s_list *prev;
+} t_list;
+
+/**
+ * Handling  possible errors
+ */
+
 void ft_error(int id)
 {
 	if (id == 1)
@@ -23,12 +46,9 @@ void ft_error(int id)
 	}
 }
 
-typedef struct s_list
-{
-	int num;
-	struct s_list *next;
-	struct s_list *prev;
-} t_list;
+/**
+ * Function return given string in reverse direction
+ */
 
 char *revstr(char *str)
 {
@@ -36,7 +56,7 @@ char *revstr(char *str)
 	size_t len;
 
 	len = strlen(str);
-	s = malloc(sizeof(char) * len + 1);
+	s = (char *)malloc(sizeof(char) * len + 1);
 	s[len] = '\0';
 	while (*str && len--)
 	{
@@ -46,12 +66,22 @@ char *revstr(char *str)
 	return (s);
 }
 
+/**
+ * Function convert character to integer
+ */
+
 int atoi_char(char c)
 {
 	int num = 0;
 	num = c - '0';
 	return (num);
 }
+
+/**
+ * The function takes two stings and pointer to linked list.
+ * The main idea is a make linked list and
+ * fill it by the integers in each step of algorithm "multiplication by a column".
+ */
 
 void mult_infinit(t_list **res, char *s1, char *s2)
 {
@@ -62,13 +92,12 @@ void mult_infinit(t_list **res, char *s1, char *s2)
 	int num;
 
 	str2 = s2;
-	*res = (t_list *)malloc(sizeof(t_list));
+	*res = (t_list *) malloc(sizeof(t_list));
 	(*res)->prev = NULL;
 	(*res)->next = NULL;
 	(*res)->num = 0;
 	list = *res;
 	move = *res;
-	num = 0;
 	while (*str2)
 	{
 		str1 = s1;
@@ -79,7 +108,7 @@ void mult_infinit(t_list **res, char *s1, char *s2)
 			{
 				if (!list->next)
 				{
-					list->next = (t_list *)malloc(sizeof(t_list));
+					list->next = (t_list *) malloc(sizeof(t_list));
 					list->next->next = NULL;
 					list->next->prev = list;
 					list->next->num = (list->num + num) / 10;
@@ -89,7 +118,7 @@ void mult_infinit(t_list **res, char *s1, char *s2)
 				{
 					if ((list->next->num + ((list->num + num) / 10)) >= 10)
 					{
-						list->next->next = (t_list *)malloc(sizeof(t_list));
+						list->next->next = (t_list *) malloc(sizeof(t_list));
 						list->next->next->next = NULL;
 						list->next->next->prev = list->next;
 						list->next->next->num = (list->next->num + ((list->num + num) / 10)) / 10;
@@ -106,7 +135,7 @@ void mult_infinit(t_list **res, char *s1, char *s2)
 			else
 			{
 				list->num = list->num + num;
-				list->next = (t_list *)malloc(sizeof(t_list));
+				list->next = (t_list *) malloc(sizeof(t_list));
 				list->next->next = NULL;
 				list->next->prev = list;
 			}
@@ -118,6 +147,10 @@ void mult_infinit(t_list **res, char *s1, char *s2)
 		list = move;
 	}
 }
+
+/**
+ * The function opens and reads the given file by a received path from the arguments.
+ */
 
 void read_file(char **str, char *path)
 {
@@ -141,28 +174,39 @@ void read_file(char **str, char *path)
 		ft_error(1);
 }
 
+/**
+ * The function get result list and write answer to the opened file.
+ */
+
 void print_answer(t_list *res)
 {
 	FILE *p = NULL;
-	p = fopen("/nfs/2016/o/orizhiy/ClionProjects/GL_task_multiply_numbers(linked_list)/result.txt", "w");
-
+	p = fopen("result.txt", "w");
 	t_list *list;
 
-	list = res;
-	while (list->next)
-		list = list->next;
-	while(list)
+	if (p)
 	{
-		if(!list->next && !list->num)
-			list = list->prev;
-		else
+		list = res;
+		while (list->next)
+			list = list->next;
+		while (list)
 		{
-			fprintf(p, "%d", list->num);
-//			printf("%d", list->num);
-			list = list->prev;
+			if (!list->next && !list->num)
+				list = list->prev;
+			else
+			{
+				fprintf(p, "%d", list->num);
+				list = list->prev;
+			}
 		}
 	}
+	else
+		ft_error(2);
 }
+
+/**
+ * Entry point
+ */
 
 int main(int ac, char **av)
 {
@@ -183,10 +227,4 @@ int main(int ac, char **av)
 		ft_error(1);
 }
 
-
-/*
-
-
-
-
-*/
+/*********************************************************************************************************************/
