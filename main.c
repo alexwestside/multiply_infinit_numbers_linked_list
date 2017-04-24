@@ -46,7 +46,7 @@ void ft_error(int id)
 }
 
 /**
- * Function return given string in reverse direction
+ * The function return given string in reverse direction
  */
 
 char *revstr(char *str)
@@ -66,7 +66,7 @@ char *revstr(char *str)
 }
 
 /**
- * Function convert character to integer
+ * The function convert character to integer
  */
 
 int atoi_char(char c)
