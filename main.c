@@ -1,9 +1,4 @@
 
-#include <fcntl.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <memory.h>
-
 /**********************************************************************************************************************
 * Hello!
 * This is version #2 of solution program which solves task by implementation linked list.
@@ -11,6 +6,10 @@
 * That numbers will be multiply and write a result to the created file.
 */
 
+#include <fcntl.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <memory.h>
 
 /**
  * Define a structure which will be fill a int representation number sequence of the result
@@ -175,7 +174,7 @@ void read_file(char **str, char *path)
 }
 
 /**
- * The function get result list and write answer to the opened file.
+ * The function get result list and write answer to the created and opened file.
  */
 
 void print_answer(t_list *res)
