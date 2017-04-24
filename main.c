@@ -2,8 +2,12 @@
 /**********************************************************************************************************************
 * Hello!
 * This is version #2 of solution program which solves task by implementation linked list.
-* Program takes 2 parameters which can be 2 txt files with a "infiniti" numbers.
+* Program takes 2 parameters which can be 2 txt files with a "infinit" numbers.
 * That numbers will be multiply and write a result to the created file.
+ *
+ * Thank you for watching the code!
+ * If you have interest to review my other projects, please follow the link - https://gitlab.com/users/sklif.85/projects.
+ *
 */
 
 #include <fcntl.h>

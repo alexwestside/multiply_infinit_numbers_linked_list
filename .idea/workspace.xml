@@ -41,10 +41,10 @@
       <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="49" column="3" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
+            <state relative-caret-position="150">
+              <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
               <folding>
-                <element signature="e#377#395#0" expanded="true" />
+                <element signature="e#540#558#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -399,7 +399,7 @@
       <workItem from="1492867467291" duration="434000" />
       <workItem from="1492871030903" duration="13642000" />
       <workItem from="1492937779906" duration="18241000" />
-      <workItem from="1493018753777" duration="524000" />
+      <workItem from="1493018753777" duration="951000" />
     </task>
     <task id="LOCAL-00001" summary="end_1">
       <created>1492874785681</created>
@@ -436,11 +436,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493020375971</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="end_2">
+      <created>1493020408481</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1493020408481</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53888000" />
+    <option name="totallyTimeSpent" value="54315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -476,7 +483,8 @@
     <MESSAGE value="corr2" />
     <MESSAGE value="corr3" />
     <MESSAGE value="end_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="end_1" />
+    <MESSAGE value="end_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="end_2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -498,7 +506,7 @@
         <state relative-caret-position="750">
           <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
           <folding>
-            <element signature="e#377#395#0" expanded="true" />
+            <element signature="e#540#558#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -557,10 +565,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="49" column="3" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
+        <state relative-caret-position="150">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding>
-            <element signature="e#377#395#0" expanded="true" />
+            <element signature="e#540#558#0" expanded="true" />
           </folding>
         </state>
       </provider>
